@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -11,8 +11,8 @@
     <title>One Page Wonder - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
@@ -25,8 +25,8 @@
 
 <body>
 
-<!-- Navigation -->
-<nav class="header">
+
+<nav class="header fixed-top bg-white">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 ">
@@ -37,9 +37,10 @@
             </div>
 
             <div class="col-lg-8">
+
                 <ul class="menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Best ADA soutions</a>
+                        <a class="nav-link" href="#ada">Best ADA soutions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Compare features</a>
@@ -57,11 +58,15 @@
                 <a class="nav__search" href="#">
                     <img src="img/search.svg">
                 </a>
+
+
             </div>
+
 
         </div>
     </div>
 </nav>
+
 <div class="nav__search-block">
     <form action="/" method="get">
         <div class="d-flex align-items-center justify-content-center">
@@ -76,9 +81,9 @@
     <div class="container-fluid">
         <div class="about__bg">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__overlay">
-                        <div class="about__title mt-5">
+                <div class="col-lg-6 order-2 order-sm-2 order-lg-1 d-flex justify-content-center align-items-center">
+                    <div class="about__overlay mb-3">
+                        <div class="about__title  title mt-5">
                             Best Website Accessibility Solutions
                         </div>
                         <p class="about__text mt-3">
@@ -88,16 +93,18 @@
                             <div class="about__service-ada ">
                                 ADA compliance
                             </div>
-                            <div class="about__service-wcag ml-3">
+                            <div class="about__service-wcag ml-3 mt">
                                 WCAG standards
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-sm-1 order-lg-2">
                     <div class="about__media d-flex align-items-center justify-content-center">
+
                         <img src="img/web.png" class="">
+
                     </div>
                 </div>
             </div>
@@ -106,42 +113,48 @@
     </div>
 </section>
 
+<!-- ada block -->
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-9">
             <div class="solution__block d-flex align-items-center justify-content-between">
-                <div class="solution__title mt-3 mb-3">
+                <h4 class="solution__title  mt-3 mb-3">
                     Top ADA solutions
-                </div>
-                <div class="solution__wrapper d-flex">
-                    <div class="solution__text mt-3 mb-3">
-                        We receive referral fees from partners
-                    </div>
+                </h4>
 
-                    <div class="solution__text mt-3 mb-3 ml-3 mr-3">
+                <div class="solution__item d-flex mr-3">
+                    <p class="solution__link" data-toggle="tooltip" data-placement="bottom" data-toggle="tooltip"
+                       data-html="true"
+                       title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis tellus cursus justo, accumsan convallis fermentum etiam non. Nunc placerat erat sodales consectetur enim, magna euismod.">
+                        We receive referral fees from partners
+                    </p>
+                    <p class="solution__link" href="#" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                       title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis tellus cursus justo, accumsan convallis fermentum etiam non. Nunc placerat erat sodales consectetur enim, magna euismod.">
                         Advertising Disclosure
-                    </div>
+                    </p>
                 </div>
+
+
             </div>
 
+            <!-- price -->
 
-            <!-- block price -->
-            <div class="price mt-3 mb-3">
+            <div class="card price mt-3 mb-3">
                 <div class="row">
-                    <div class="col-lg-2 d-flex justify-content-center align-items-center border-right">
+                    <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center border-right">
                         <div class="price__images">
-                            <img src="img/access.svg">
+                            <img src="img/logo-1.png">
                         </div>
                     </div>
-                    <div class="col-lg-10">
-                        <div class="price__wrapper mt-4 mb-3">
+                    <div class="col-md-9 col-lg-10">
+                        <div class="price__wrapper mt-4 mb-3 ml-5 ">
                             <div class="price__overlay d-flex justify-content-between">
-                                <div class="price__title mb-2">
+                                <div class="price__title title mb-2">
                                     1. Accessibe
                                 </div>
                                 <div class="price__rating price__rating-green mr-4">
-                                    <div class="price__rating-title d-flex align-items-center justify-content-center">
+                                    <div class="price__rating-title d-flex align-items-center justify-content-center ">
                                         9.8
                                     </div>
                                 </div>
@@ -153,23 +166,25 @@
                             </div>
                             <div class="price__overlay d-flex justify-content-between ">
                                 <div class="price__list-overlay d-flex flex-column ml-4">
-                                    <div class="price__list mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
 
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
+                                    <ul class="price__wrapper ">
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <a class="price__btn mr-4" href="#">
+                                <div class="price__wrapper-btn d-flex flex-column  ">
+                                    <a class="btn btn-bg mr-4 text-white" href="#">
                                         Go to website
                                     </a>
 
-                                    <a class="price__link mt-4" href="#">
+                                    <a class="price__link link mt-4 mr-4" href="#">
                                         Detailed review
                                     </a>
                                 </div>
@@ -183,23 +198,22 @@
 
             </div>
 
-
-            <div class="price mt-3 mb-3">
+            <div class="card price mt-3 mb-3">
                 <div class="row">
-                    <div class="col-lg-2 d-flex justify-content-center align-items-center border-right">
+                    <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center border-right">
                         <div class="price__images">
-                            <img src="img/access.svg">
+                            <img src="img/logo-1.png">
                         </div>
                     </div>
-                    <div class="col-lg-10">
-                        <div class="price__wrapper mt-4 mb-3">
+                    <div class="col-md-9 col-lg-10">
+                        <div class="price__wrapper mt-4 mb-3 ml-5">
                             <div class="price__overlay d-flex justify-content-between">
-                                <div class="price__title mb-2">
-                                    2. UserWay
+                                <div class="price__title title mb-2">
+                                    2. Equalweb
                                 </div>
                                 <div class="price__rating price__rating-red mr-4">
                                     <div class="price__rating-title d-flex align-items-center justify-content-center">
-                                        9.8
+                                        1.0
                                     </div>
                                 </div>
                             </div>
@@ -210,24 +224,27 @@
                             </div>
                             <div class="price__overlay d-flex justify-content-between ">
                                 <div class="price__list-overlay d-flex flex-column ml-4">
-                                    <div class="price__list mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
 
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
+                                    <ul class="price__wrapper ">
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <a class="price__btn mr-4" href="#">
+                                <div class="price__wrapper-btn d-flex flex-column">
+                                    <a class="btn btn-bg text-white mr-4" href="#">
                                         Go to website
                                     </a>
 
-                                    <a class="price__link mt-4" href="#">
+                                    <a class="price__link link  mt-4 mr-4" href="#">
                                         Detailed review
+
                                     </a>
                                 </div>
                             </div>
@@ -240,23 +257,22 @@
 
             </div>
 
-
-            <div class="price mt-3 mb-3">
+            <div class="card price mt-3 mb-3">
                 <div class="row">
-                    <div class="col-lg-2 d-flex justify-content-center align-items-center border-right">
+                    <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center border-right">
                         <div class="price__images">
-                            <img src="img/access.svg">
+                            <img src="img/logo-1.png">
                         </div>
                     </div>
-                    <div class="col-lg-10">
-                        <div class="price__wrapper mt-4 mb-3">
+                    <div class="col-md-9 col-lg-10">
+                        <div class="price__wrapper mt-4 mb-3 ml-5">
                             <div class="price__overlay d-flex justify-content-between">
-                                <div class="price__title mb-2">
-                                    3. Equalweb
+                                <div class="price__title title mb-2">
+                                    2. Equalweb
                                 </div>
-                                <div class="price__rating price__rating-green mr-4">
+                                <div class="price__rating price__rating-red mr-4">
                                     <div class="price__rating-title d-flex align-items-center justify-content-center">
-                                        9.8
+                                        1.0
                                     </div>
                                 </div>
                             </div>
@@ -267,24 +283,27 @@
                             </div>
                             <div class="price__overlay d-flex justify-content-between ">
                                 <div class="price__list-overlay d-flex flex-column ml-4">
-                                    <div class="price__list mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
 
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
+                                    <ul class="price__wrapper ">
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <a class="price__btn mr-4" href="#">
+                                <div class="price__wrapper-btn d-flex flex-column">
+                                    <a class="btn btn-bg text-white mr-4" href="#">
                                         Go to website
                                     </a>
 
-                                    <a class="price__link mt-4" href="#">
+                                    <a class="price__link link  mt-4 mr-4" href="#">
                                         Detailed review
+
                                     </a>
                                 </div>
                             </div>
@@ -298,22 +317,22 @@
             </div>
 
 
-            <div class="price mt-3 mb-3">
+            <div class="card price mt-3 mb-3">
                 <div class="row">
-                    <div class="col-lg-2 d-flex justify-content-center align-items-center border-right">
+                    <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center border-right">
                         <div class="price__images">
-                            <img src="img/access.svg">
+                            <img src="img/logo-1.png">
                         </div>
                     </div>
-                    <div class="col-lg-10">
-                        <div class="price__wrapper mt-4 mb-3">
+                    <div class="col-sm-12 col-md-9 col-lg-10">
+                        <div class="price__wrapper mt-4 mb-3 ml-5">
                             <div class="price__overlay d-flex justify-content-between">
-                                <div class="price__title mb-2">
-                                    4. UserWay
+                                <div class="price__title title mb-2">
+                                    2. Equalweb
                                 </div>
-                                <div class="price__rating price__rating-green mr-4">
+                                <div class="price__rating price__rating-red mr-4">
                                     <div class="price__rating-title d-flex align-items-center justify-content-center">
-                                        9.8
+                                        1.0
                                     </div>
                                 </div>
                             </div>
@@ -324,24 +343,27 @@
                             </div>
                             <div class="price__overlay d-flex justify-content-between ">
                                 <div class="price__list-overlay d-flex flex-column ml-4">
-                                    <div class="price__list mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
 
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
+                                    <ul class="price__wrapper ">
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                        <li class="price__list">
+                                            <p>Best for - SMBs, mobile, strong features</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <a class="price__btn mr-4" href="#">
+                                <div class="price__wrapper-btn d-flex flex-column">
+                                    <a class="btn btn-bg text-white mr-4" href="#">
                                         Go to website
                                     </a>
 
-                                    <a class="price__link mt-4" href="#">
+                                    <a class="price__link link  mt-4 mr-4" href="#">
                                         Detailed review
+
                                     </a>
                                 </div>
                             </div>
@@ -353,91 +375,70 @@
 
 
             </div>
-            <div class="price mt-3 mb-3">
+
+
+            <section class="site__content mt-5 mb-5" id="ada">
                 <div class="row">
-                    <div class="col-lg-2 d-flex justify-content-center align-items-center border-right">
-                        <div class="price__images">
-                            <img src="img/equal.svg">
+                    <div class="col-md-3 col-lg-2 ">
+                        <div class="sidebar__post">
+                            <img src="img/sidebar-img.jpg" class="sidebar__img mt-3">
+                            <div class="sidebar__title title  pt-4 ml-3">
+                                How to become a compliant
+                            </div>
+                            <div class="sidebar__content ml-3">
+                                <div class="search__content-post mb-3">
+                                    <p class="sidebar__text ">
+                                        Lorem ipsum dolor amet, consectetur adipiscing elit
+                                    </p>
+                                    <a class="sidebar__link mb-4" href="#">Read more</a>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
-                    <div class="col-lg-10">
-                        <div class="price__wrapper mt-4 mb-3">
-                            <div class="price__overlay d-flex justify-content-between">
-                                <div class="price__title mb-2">
-                                    5. Equalweb
-                                </div>
-                                <div class="price__rating price__rating-green mr-4">
-                                    <div class="price__rating-title d-flex align-items-center justify-content-center">
-                                        9.8
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="price__text mb-3">
-                                Transforming web accessibility by replacing a costly, manual process with automated,
-                                technology
-                            </div>
-                            <div class="price__overlay d-flex justify-content-between ">
-                                <div class="price__list-overlay d-flex flex-column ml-4">
-                                    <div class="price__list mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
 
-                                    <div class="price__list  mb-2">
-                                        Best for - SMBs, mobile, strong features
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <a class="price__btn mr-4" href="#">
-                                        Go to website
-                                    </a>
-
-                                    <a class="price__link mt-4" href="#">
-                                        Detailed review
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="col-md-9  col-lg-7">
+                        <div class="site__content ml-3 ">
+                            <h2 class="title mb-3">What you need to know about website accessibility?</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                            </p>
+                            <h3 class="title mb-3">Secondary title here</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h3 class="title">Secondary title here</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-
-
                     </div>
                 </div>
-
-            </div>
-
-
-
-<!-- sidebar right -->
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </section>
         </div>
-
-
-
 
 
         <!-- sidebar Must reads-->
         <div class="col-lg-3">
             <div class="sidebar__post pb-4">
-                <div class="sidebar__title pt-4 mb-4 ml-4">
+                <div class="sidebar__title title pt-4 mb-4 ml-4">
                     Must reads
                 </div>
                 <div class="sidebar__content  d-flex ml-4 mb-4">
@@ -477,11 +478,11 @@
             <!-- sidebar   -->
 
             <div class="sidebar__post ">
-                <div class="sidebar__title pt-4 mb-4 ml-4">
+                <div class="sidebar__title title pt-4 mb-4 ml-4">
                     Explore our process of rating best accessibility website solutions
                 </div>
                 <div class="sidebar__content d-flex ml-4 mb-4">
-                    <div class="search__content-post">
+                    <div class="search__content-post mb-3">
                         <p class="sidebar__text ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt.
@@ -496,8 +497,6 @@
     </div>
 </div>
 </section>
-
-
 
 
 <!-- footer -->

@@ -33,10 +33,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-@media (max-width: 768px) {
-  display: none;
+  @media (max-width: 768px) {
+    display: none;
 
-}
+  }
+
   li {
     list-style: none;
     margin-right: 50px;
@@ -84,6 +85,10 @@
         border: 2px solid #FE7F5A;
       }
     }
+
+    &:active {
+      color: #FE7F5A;
+    }
   }
 }
 
@@ -101,5 +106,5 @@
   }
 
 
-  }
+}
 
